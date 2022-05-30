@@ -142,9 +142,9 @@ class Invader {
 		}
 
 		const image = new Image()
-		image.src = './img/invader.png'
+		image.src = './img/invader2.ico'
 		image.onload = () => {
-			const scale = 1
+			const scale = 0.6
 			this.image = image
 			this.width = image.width * scale
 			this.height = image.height * scale
@@ -285,7 +285,7 @@ function createParticles({ object, color, fades }) {
 				y: (Math.random() - 0.5) * 2
 			},
 			radius: Math.random() * 3,
-			color: color || 'mediumorchid',
+			color: color || 'white',
 			fades
 		}))
 	}
@@ -339,7 +339,7 @@ function animate() {
 			
 			createParticles({
 				object: player,
-				color: 'white',
+				color: '#39FF14',
 				fades: true
 			})
 		}
